@@ -1,0 +1,310 @@
+body {
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Spartan', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "section-up"
+                        "section-down";
+}
+
+.section-up {
+    margin: 12vh 10vw 0vh 10vw;
+    grid-area: section-up;
+    display: grid;
+    grid-template-areas: "section-up-left section-up-right";
+}
+
+.section-up-left {
+    grid-area: section-up-left;
+}
+
+.section-up-right {
+    grid-area: section-up-right;
+}
+
+.title {
+    white-space: pre-line;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    font-size: 2vw;
+    padding: 0%;
+    margin: 0%;
+}
+
+.description {
+    white-space: pre-line;
+    font-size: 0.7vw;
+    margin: 0%;
+    padding: 0%;
+}
+
+.star {
+    margin: 0%;
+    padding: 0%;
+}
+
+.card-rate {
+    background-color:hsl(0, 0%, 96%);
+    width: 28vw;
+    padding: 2vh 0vw 2vh 2vw;
+    border-radius: 7px;
+    margin-top: 2vh;
+}
+
+.rate1{
+    margin-top: 1vh;
+    margin-left: -3vw;
+}
+
+.rate3{
+    margin-left: 3vw;
+}
+
+.section-star {
+    display: inline-block;
+}
+
+.txt-rate {
+    display: inline;
+    font-size: 1vw;
+    margin: 0%;
+    padding: 0%;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    padding-left: 1.5vw;
+}
+
+.section-down {
+    grid-area: section-down;
+    margin: 0vh 10vw 10vh 10vw;
+}
+
+.card-opinion {
+    width: 23%;
+    background-color: hsl(300, 43%, 22%);
+    padding: 3% 2% 2% 2%;
+    border-radius: 10px;
+    position: relative;
+}
+
+.opinion1 {
+    margin-right: 2vw;
+    float: left;
+}
+
+.opinion2 {
+    margin-top: 2vh;
+    margin-right: 2vw;
+    float: left;
+}
+
+.opinion3 {
+    margin-top: 4vh;
+    float: left;
+}
+
+.photo {
+    border-radius: 100%;
+    width: 3vw;
+}
+
+.info {
+    display: inline-block;
+    top: 0%;
+    position: relative;
+    top: -1vh;
+    right: -1vw;
+}
+
+.name {
+    padding: 0%;
+    margin: 0%;
+    font-size: 1vw;
+    font-weight: 500;
+    color: hsl(0, 0%, 100%);
+}
+
+.verified {
+    padding: 0%;
+    margin: 0%;
+    font-size: 0.9vw;
+    color: hsl(333, 80%, 67%);
+}
+
+.section-opinion {
+    margin-top: 2vh;
+}
+
+.txt-opinion {
+    font-size: 0.8vw;
+    color: hsl(0, 0%, 100%);
+}
+
+.pattern-up{
+    position: fixed;
+    -ms-transform: translate(-33%, 0%);
+    transform: translate(-33%, 0%);
+}
+
+.pattern-down{
+    position: fixed;
+    -ms-transform: translate(33%, 15%);
+    transform: translate(33%, 15%);
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 1%;
+    color: hsl(300, 43%, 22%);
+    text-align: center;
+    font-size: 1em;
+}
+
+footer a {
+    color: hsl(300, 43%, 22%);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+/* Pantallas de tamaño máximo de 700 píxeles */
+@media screen and (max-width: 700px){
+    .pattern-up {
+        display: none;
+    }
+
+    .pattern-down {
+        display: none;
+    }
+
+    .section-up {
+        grid-template-areas: "section-up-left"
+        "section-up-right";
+        margin: 10% 5% 0% 5%;
+    }
+
+    .section-up-left{
+        grid-area: section-up-left;
+        margin: 0%;
+    }
+
+    .section-up-right{
+        margin-top: 2vh;
+        grid-area: section-up-right;
+    }
+
+    .title {
+        text-align: center;
+        white-space:normal;
+        margin-top: 2%;
+        font-size: 6vw;
+    }
+
+    .description {
+        text-align: center;
+        white-space: normal;
+        margin-top: 1vh;
+        font-size: 3vw;
+    }
+
+    .card-rate {
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+        border-radius: 5px;
+    }
+
+    .rate1{
+        margin: 0%;
+        margin-bottom: 10px;
+    }
+
+    .rate2 {
+        margin-bottom: 10px;
+    }
+
+    .rate3{
+        margin: 0%;
+    }
+
+    .txt-rate {
+        display: block;
+        text-align: center;
+        font-size: 10px;
+        padding-bottom: 2%;
+    }
+
+    .section-star {
+        display: block;
+        text-align: center;
+        left: 50%;
+        padding-top: 2%;
+    }
+
+    .star {
+        width: 2vh;
+    }
+
+    .section-down {
+        margin-top: 25px;
+        margin-left: 5%;
+    }
+
+    .card-opinion {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .photo {
+        width: 12vw;
+    }
+
+    .name {
+        font-size: 4vw;
+    }
+
+    .verified {
+        font-size: 3vw;
+        font-weight: 300;
+    }
+
+    .txt-opinion {
+        font-size: 4vw;
+    }
+
+    .opinion1 {
+        margin: 0%;
+        margin-bottom: 10px;
+    }
+    
+    .opinion2 {
+        margin: 0%;
+        margin-bottom: 10px;
+    }
+
+    .opinion3 {
+        margin: 0%;
+    }
+
+    .pattern-mobile-up{
+        display: block;
+        position: absolute;
+        -ms-transform: translate(-50%, 0%);
+        transform: translate(-50%, 0%);
+    }
+    
+    footer {
+        font-size: 0.8em;
+        position: relative;
+    }
+}
