@@ -12,7 +12,7 @@ body {
 }
 
 .section-up {
-    margin: 12vh 10vw 0vh 10vw;
+    margin: 15vh 10vw 0vh 12vw;
     grid-area: section-up;
     display: grid;
     grid-template-areas: "section-up-left section-up-right";
@@ -30,14 +30,14 @@ body {
     white-space: pre-line;
     color: hsl(300, 43%, 22%);
     font-weight: 700;
-    font-size: 2vw;
+    font-size: 3vw;
     padding: 0%;
     margin: 0%;
 }
 
 .description {
     white-space: pre-line;
-    font-size: 0.7vw;
+    font-size: 1vw;
     margin: 0%;
     padding: 0%;
 }
@@ -80,11 +80,11 @@ body {
 
 .section-down {
     grid-area: section-down;
-    margin: 0vh 10vw 10vh 10vw;
+    margin: 0vh 10vw 10vh 12vw;
 }
 
 .card-opinion {
-    width: 23%;
+    width: 25%;
     background-color: hsl(300, 43%, 22%);
     padding: 3% 2% 2% 2%;
     border-radius: 10px;
@@ -161,11 +161,11 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    padding: 1%;
     color: hsl(300, 43%, 22%);
     text-align: center;
     font-size: 1em;
     padding: 0%;
+    padding-bottom: 1%;
 }
 
 footer a {
